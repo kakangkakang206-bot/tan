@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f0eb;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #6f4e37;
+    }
+
+    .price {
+      color: #333;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #6f4e37;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>☕ Coffee Shop Menu</h1>
+    <p>Nikmati kopi terbaik setiap hari</p>
+  </header>
+
+  <div class="container">
+    <div class="menu">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Espresso">
+        <div class="card-content">
+          <h3>Espresso</h3>
+          <p>Kopi hitam pekat dengan rasa kuat.</p>
+          <div class="price">Rp 18.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Cappuccino">
+        <div class="card-content">
+          <h3>Cappuccino</h3>
+          <p>Perpaduan espresso dan susu creamy.</p>
+          <div class="price">Rp 25.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Latte">
+        <div class="card-content">
+          <h3>Latte</h3>
+          <p>Minuman kopi lembut dengan susu.</p>
+          <div class="price">Rp 27.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Americano">
+        <div class="card-content">
+          <h3>Americano</h3>
+          <p>Espresso dengan tambahan air panas.</p>
+          <div class="price">Rp 20.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Mocha">
+        <div class="card-content">
+          <h3>Mocha</h3>
+          <p>Kombinasi kopi dan cokelat manis.</p>
+          <div class="price">Rp 30.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff" alt="Macchiato">
+        <div class="card-content">
+          <h3>Macchiato</h3>
+          <p>Espresso dengan foam susu lembut.</p>
+          <div class="price">Rp 28.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="Cold Brew">
+        <div class="card-content">
+          <h3>Cold Brew</h3>
+          <p>Kopi dingin segar dengan rasa halus.</p>
+          <div class="price">Rp 32.000</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Coffee Shop Indonesia</p>
+  </footer>
+
+</body>
+</html>
